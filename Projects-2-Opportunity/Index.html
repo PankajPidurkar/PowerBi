@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>🧔🏻Pankaj_Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+
+		/* Video Section */
+
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Content Section  */
+
+.content-section h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.content-section p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section {
+  width: 48%;
+  float: right;
+  padding: 0px;
+  overflow-y: scroll; /* add this line */
+  height: 900px; /* set a height for the scrolling area */
+}
+
+		/* Image Section */
+
+		.image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+	  .image {
+        width: 340px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+	  .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+	  .modal img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+
+
+		/* Responsive code */
+
+
+		@media screen and (max-width: 768px) {
+			.column {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+			.content-section h1 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+/* Content Section */
+.content-section p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section {
+  width: 85%;
+  float: left;
+  padding: 23px;
+  overflow-y: scroll; /* add this line */
+  height: 400px; /* set a height for the scrolling area */
+}
+		}
+		span{
+			color: yellowgreen;
+		}
+
+
+				/* NAVBAR */
+        nav{
+          background-color: rgb(224, 237, 197);
+  box-shadow: 0 3px 10px rgb(57, 244, 0);
+        }
+
+.navbar .max-width {
+  margin: 0 auto;
+  padding: 10px 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.navbar .logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+}
+
+.navbar .logo a {
+  color:yellowgreen;
+}
+
+.navbar .logo a:hover{
+  color: black !important;
+}
+
+/* Styles for the links inside the navbar */
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+  
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px 25px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  /* transition: all 0.3s ease-in-out; */
+  
+}
+.sizw{
+
+	font-size: 16px;
+}
+
+.navbar ul li a:hover {
+  background-color: yellowgreen;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+      /* Adjust styles for smaller screens */
+      h1 {
+        font-size: 24px;
+      }
+      
+      h2 {
+        font-size: 20px;
+      }
+      
+      h3 {
+        font-size: 18px;
+      }
+      .navbar .logo {
+  font-size: 23px;
+  font-weight: bold;
+}
+    }
+
+    .nap{
+      color: black !important;
+    }
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><span><img src="/Index/Project - 1/Icon Power Bi.png" alt="" srcset=""><strong>🧔🏻‍♂️</strong>It's me <span class="nap">Pankaj.</span></span></a></div>
+            <ul class="menu">
+                <li><a href="Index.html" class="menu-btn">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+	<div class="row">
+		<div class="column">
+			<div class="video-container">
+				<iframe width="100%" height="100%" src="Opportunity Analysis.mp4" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<section class="content-section">
+			<h4><span>🛍️ Opportunity Analysis Dashboard</span></h4>
+<div>
+
+
+  <h2>How I Created an Opportunity Analysis Dashboard:</h2>
+
+<ol>
+  <li>Data Collection: I gathered the necessary data related to opportunities from various sources, ensuring a comprehensive dataset for analysis. 📊</li>
+  
+  <li>Import Data: Using Power Query in Power BI, I imported the opportunity data and performed data cleansing and transformation tasks. This included removing duplicates, filling in missing values, and standardizing data formats. 🧹</li>
+  
+  <li>Calculation of KPIs: Leveraging DAX functions in Power BI, I calculated essential Key Performance Indicators (KPIs) to evaluate the performance and characteristics of the opportunities. This involved measures such as Average Opportunity Days, Average Revenue, Estimated Opportunity Count, Factored Revenue, Opportunity Count, Opportunity Days, Total Opportunity Days, and Total Revenue. These KPIs provide valuable insights into the opportunities and facilitate informed decision-making. 📈</li>
+  
+  <li>Creation of Visualizations: Using the calculated KPIs and the opportunity dataset, I designed visually appealing and informative charts, graphs, and tables in Power BI. These visualizations help in better understanding and analyzing the opportunity data, enabling stakeholders to identify trends, patterns, and areas of improvement. 📊</li>
+  
+  <li>Interpretation and Insights: Through thorough analysis of the Opportunity Analysis Dashboard, I gained valuable insights into the performance, revenue, and characteristics of the opportunities. These insights can guide strategic planning, resource allocation, and optimization of business processes.</li>
+</ol>
+<h2>I Used DAX function to Calculate KPIs and the Calculated Column has:</h2>
+
+<ul>
+  <li>Factored_Product_Revenue</li>
+  <li>Month</li>
+  <li>Month_Number</li>
+  <li>Year</li>
+  <li>Opportunity Size</li>
+  <li>Rank</li>
+  <li>SizeId</li>
+  <li>Partner Driven</li>
+  <li>Average Opportunity Days</li>
+  <li>Average Revenue</li>
+  <li>Estimated Opportunity Count</li>
+  <li>Factored Revenue</li>
+  <li>Opportunity Count</li>
+  <li>Opportunity Days</li>
+  <li>Total Opportunity Days</li>
+  <li>Total Revenue</li>
+</ul>
+
+<h3>The calculated measures are:</h3>
+
+<ul>
+  <li>Average Opportunity Days = AVERAGE('Fact'[Opportunity Days]) 📊</li>
+  <li>Average Revenue = AVERAGE('Fact'[ProductRevenue]) 💰</li>
+  <li>Estimated Opportunity Count = CALCULATE([Opportunity Count],'Fact'[EstimatedCloseDate]) 🔍</li>
+  <li>Factored Revenue = SUM('Fact'[FactoredProductRevenue]) 💼</li>
+  <li>Opportunity Count = COUNTA('Fact'[Opportunity ID]) 📈</li>
+  <li>Opportunity Days = SUM('Fact'[Opportunity Days]) ⌛</li>
+  <li>Total Opportunity Days = SUM('Fact'[Opportunity Days]) ⏳</li>
+  <li>Total Revenue = SUM('Fact'[ProductRevenue]) 💵</li>
+</ul>
+
+<h3>The calculated columns are:</h3>
+
+<ul>
+  <li>Opportunity Size = IF(Opportunity[SizeID] = 1, "Small", IF(Opportunity[SizeID] = 2, "Medium", "High")) 📉</li>
+  <li>Rank = RANKX(Opportunity, SUMX(RELATEDTABLE('Fact'), 'Fact'[ProductRevenue]), SUMX(RELATEDTABLE('Fact'),'Fact'[ProductRevenue]), ASC, Dense) 🥇</li>
+  <li>SizeId = CEILING([Rank]/(MAX([Rank])/3), 1) 📊</li>
+  <li>Partner Driven = IF([Partner] = "Direct", "No", "Yes") 👥</li>
+</ul>
+
+  
+
+		
+			</p>
+		</section>
+		<div class="column">
+			<div class="image-container">
+			  <img class="image" src="1 - Image.png" alt="Image 1">
+			  <img class="image" src="2  - Image.png" alt="Image 2">
+			  <img class="image" src="3 - Image.png" alt="Image 3">
+			  <img class="image" src="4 - image.png" alt="Image 4">
+			  <img class="image" src="5 - Image.png" alt="Image 4">
+			  <img class="image" src="6 - image.png" alt="Image 4">
+			  <img class="image" src="7 - image.png" alt="Image 1">
+			</div>
+		  </div>
+				</div>
+
+				<script>
+					const images = document.querySelectorAll('.image');				
+					images.forEach(image => {
+					  image.addEventListener('click', () => {
+						const bigImage = document.createElement('img');
+						bigImage.src = image.src.replace('500x500', '1000x1000');
+						bigImage.alt = image.alt;
+						
+						const modal = document.createElement('div');
+						modal.classList.add('modal');
+						modal.appendChild(bigImage);
+						
+						document.body.appendChild(modal);
+						
+						modal.addEventListener('click', () => {
+						  modal.remove();
+						});
+					  });
+					});
+				  </script>
+
+				</body>
+				</html>
